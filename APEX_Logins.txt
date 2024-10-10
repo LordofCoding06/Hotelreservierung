@@ -1,0 +1,5 @@
+URL: https://apex.oracle.com/pls/apex/r/apex/workspace-sign-in/oracle-apex-sign-in
+
+Workspace: cen_hotelreservierung
+Username: Watcher
+Password: hjk0wyt8gxh4BNH.tyw
