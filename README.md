@@ -2,11 +2,11 @@
 HO-Projekt für den 11.10.2024
 
 Mein Ziel:
-1. Eine ganze Infrastutur zu bauen über das Thema Hotelreservierungssystem. Meine Ideen werde ich im Dokument XXXXX teilen.
-2. Ich möchte ein ERD erstellen mit einem Tool wie zum Beispiel Miro oder Visual Paradigm.
-3. Als nächstes möchte ich mit hilfe von SQL die Tabellen erzeugen, diese sind in dem Workspace XXXYYYY. Die Logins sind im File XYXY.
-4. Dann möchte ich mit hilfe von PL/SQL Inhalte hinzufügen.
-5. Zum Schluss möchte ich pro Tabelle eine Website mit Hilfe von Oracle Academy bauen.
-6. Pro Tabelle möchte ich eine Seite haben, in welchem ich ein Inhalt löschen/bearbeiten oder hinzufügen kann.
-7. Auf der hauptseite möchte ich eine Übersicht haben über reservierungen, neuen Anfragen usw.
-8. Falls dann noch genug Zeit ist möchte ich weitere Ansichten machen für den User, dass er Reservationen machen kann und seine Daten verwalten kann.
+1. Eine komplette Infrastruktur für ein Hotelreservierungssystem zu erstellen. Meine Ideen werde ich im Dokument Hotelreservierungsideen.docx teilen.
+2. Ich möchte ein ER-Diagramm (ERD) mit einem Tool wie Miro oder Visual Paradigm erstellen. Das Dokument wird Hotelreservierung_ERD.pdf heißen.
+3. Als nächstes möchte ich mit Hilfe von SQL die Tabellen erzeugen. Diese sind im Workspace HotelDBWorkspace. Der SQL-Code wird im File Tabellenerstellung.sql sein. Die Logins für APEX sind im File APEX_Logins.txt.
+4. Danach möchte ich mit Hilfe von PL/SQL Inhalte hinzufügen. Dies wird im File Tabellenbefüllung.sql festgehalten.
+5. Zum Schluss möchte ich pro Tabelle eine Website mit Hilfe von Oracle APEX erstellen.
+6. Pro Tabelle soll es eine Seite geben, auf der Inhalte gelöscht, bearbeitet oder hinzugefügt werden können.
+7. Auf der Hauptseite möchte ich eine Übersicht über Reservierungen, neue Anfragen usw. haben.
+8. Wenn noch genug Zeit bleibt, möchte ich weitere Ansichten für den User erstellen, damit dieser Reservierungen vornehmen und seine Daten verwalten kann.
