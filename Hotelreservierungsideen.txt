@@ -1,0 +1,76 @@
+
+Projektbeschreibung: Hotelreservierungssystem
+
+Ziel des Projekts:
+Das Ziel des Projekts ist es, eine relationale Datenbank für ein Hotelreservierungssystem zu erstellen, das mehrere Hotels, Gäste, Buchungsquellen, Zahlungsmethoden und Zimmerausstattungen verwalten kann. Diese Datenbank soll es ermöglichen, Reservierungen, Zahlungen, Hotelinformationen und Zimmerkategorien effizient zu verwalten.
+
+Datenbankstruktur und Gedanken hinter den Tabellen:
+
+1. Tabelle ort:
+   - Zweck: Verwaltung von Ortsinformationen, um Adressen für Personen und Hotels zu speichern.
+   - Gedanken: Orte werden als separate Einheiten gespeichert, um Redundanzen zu vermeiden, da mehrere Personen oder Hotels demselben Ort zugeordnet werden können.
+
+2. Tabelle buchungsquelle:
+   - Zweck: Speicherung von Buchungsquellen wie Online-Plattformen oder Direktbuchungen.
+   - Gedanken: Wichtig zur Nachverfolgung der Herkunft der Reservierungen (z.B. Booking.com oder Direktbuchungen).
+
+3. Tabelle bezahlmethode:
+   - Zweck: Speichert verschiedene Zahlungsmethoden, die den Gästen angeboten werden.
+   - Gedanken: Es ist wichtig, verschiedene Zahlungsmöglichkeiten zu haben, z.B. Kreditkarten, PayPal oder Barzahlungen.
+
+4. Tabelle person:
+   - Zweck: Verwaltung von Gastinformationen sowie potenziell von Hotelangestellten.
+   - Gedanken: Personen sind zentrale Akteure im System, sei es als Gäste oder Angestellte. Sie werden mit ort verknüpft, um die Adresse zu speichern.
+
+5. Tabelle rolle:
+   - Zweck: Verwaltung von Rollen wie Gast, Mitarbeiter oder Manager.
+   - Gedanken: Die Zuordnung von Personen zu Rollen ermöglicht es, verschiedene Berechtigungen oder Verantwortlichkeiten zu definieren.
+
+6. Tabelle person_rolle:
+   - Zweck: Eine Zwischentabelle zur Verwaltung der Beziehung zwischen Personen und ihren Rollen.
+   - Gedanken: Diese Tabelle ermöglicht es, dass eine Person mehrere Rollen innehaben kann (z.B. ein Mitarbeiter, der auch Gast ist).
+
+7. Tabelle hotel:
+   - Zweck: Verwaltung von Hotelinformationen, wie Name, Adresse, Sterne, Telefonnummern und Websites.
+   - Gedanken: Jedes Hotel wird einem Ort und einer Buchungsquelle zugeordnet, um die Verwaltung und Nachverfolgbarkeit zu verbessern.
+
+8. Tabelle ausstattung:
+   - Zweck: Verwaltung von Ausstattungsmerkmalen wie WLAN, Frühstück oder Parkplätzen.
+   - Gedanken: Die Ausstattung ist für die Beschreibung der Zimmer und Hotels wichtig, um den Komfort für die Gäste zu optimieren.
+
+9. Tabelle zimmer:
+   - Zweck: Speicherung von Zimmerinformationen, einschließlich Preis, Kapazität und Status.
+   - Gedanken: Diese Tabelle ermöglicht es, die Zimmerkategorien und deren Belegung zu verwalten, was für Reservierungen und Preisregeln wichtig ist.
+
+10. Tabelle preisregel:
+   - Zweck: Speicherung von Preisanpassungen basierend auf Saisons oder Rabatten.
+   - Gedanken: Flexibilität bei der Preisgestaltung, abhängig von der Saison (z.B. höhere Preise in der Hochsaison, Rabatte in der Nebensaison).
+
+11. Tabelle reservation:
+   - Zweck: Speicherung von Reservierungen, einschließlich Check-in- und Check-out-Daten, Bewertungen und Status.
+   - Gedanken: Diese Tabelle ist der zentrale Punkt des Systems und verknüpft Gäste, Zimmer und Zahlungsinformationen.
+
+12. Tabelle bezahlung:
+   - Zweck: Verwaltung von Zahlungen für Reservierungen, einschließlich Betrag, Zahlungsstatus und Zahlungsmethode.
+   - Gedanken: Es ist wichtig, alle Zahlungsinformationen zu verfolgen, um sicherzustellen, dass Zahlungen korrekt verbucht werden.
+
+13. Tabelle zimmer_ausstattung:
+   - Zweck: Zwischentabelle zur Zuordnung von Zimmern zu ihrer Ausstattung.
+   - Gedanken: Diese Struktur erlaubt eine flexible Verknüpfung zwischen Zimmern und verschiedenen Ausstattungsmerkmalen.
+
+14. Tabelle einrichtung:
+   - Zweck: Verwaltung von Hoteleinrichtungen wie Fitnessstudios, Spas und Konferenzräumen.
+   - Gedanken: Diese Tabelle speichert die verfügbaren Einrichtungen, die für das Hotelmanagement und die Gäste von Bedeutung sind.
+
+15. Tabelle hotel_einrichtung:
+   - Zweck: Zwischentabelle, die die Hoteleinrichtungen und die Anzahl der verfügbaren Einrichtungen verwaltet.
+   - Gedanken: Diese Tabelle ermöglicht es, die Zuordnung von Hoteleinrichtungen zu verwalten (z.B. wie viele WLAN-Router oder Fitnessräume verfügbar sind).
+
+
+Datenintegrität und Referenzielle Integrität:
+Die Datenbank verwendet umfassende Fremdschlüssel, um die referenzielle Integrität zwischen den Tabellen sicherzustellen. Beispielsweise wird in der Tabelle person die oid-Spalte als Fremdschlüssel verwendet, um auf die Tabelle ort zu verweisen. Ebenso referenzieren andere Tabellen wie reservation, bezahlung und zimmer jeweils ihre entsprechenden verknüpften Daten über Fremdschlüssel.
+
+Hauptideen:
+- Modularität und Wiederverwendbarkeit: Jede Tabelle wurde so gestaltet, dass sie separat genutzt und wiederverwendet werden kann.
+- Skalierbarkeit: Die Struktur lässt sich leicht erweitern, um mehr Hotels, Gäste und Zimmer zu verwalten.
+- Datenintegrität: Es wurde Wert darauf gelegt, die Integrität der Daten durch Fremdschlüssel und referentielle Integrität zu gewährleisten.
