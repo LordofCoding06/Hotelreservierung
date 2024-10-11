@@ -1,4 +1,3 @@
-
 Projektbeschreibung: Hotelreservierungssystem
 
 Ziel des Projekts:
@@ -39,7 +38,7 @@ Datenbankstruktur und Gedanken hinter den Tabellen:
    - Gedanken: Die Ausstattung ist für die Beschreibung der Zimmer und Hotels wichtig, um den Komfort für die Gäste zu optimieren.
 
 9. Tabelle zimmer:
-   - Zweck: Speicherung von Zimmerinformationen, einschließlich Preis, Kapazität und Status.
+   - Zweck: Speicherung von Zimmerinformationen, einschliesslich Preis, Kapazität und Status.
    - Gedanken: Diese Tabelle ermöglicht es, die Zimmerkategorien und deren Belegung zu verwalten, was für Reservierungen und Preisregeln wichtig ist.
 
 10. Tabelle preisregel:
@@ -47,11 +46,11 @@ Datenbankstruktur und Gedanken hinter den Tabellen:
    - Gedanken: Flexibilität bei der Preisgestaltung, abhängig von der Saison (z.B. höhere Preise in der Hochsaison, Rabatte in der Nebensaison).
 
 11. Tabelle reservation:
-   - Zweck: Speicherung von Reservierungen, einschließlich Check-in- und Check-out-Daten, Bewertungen und Status.
+   - Zweck: Speicherung von Reservierungen, einschliesslich Check-in- und Check-out-Daten, Bewertungen und Status.
    - Gedanken: Diese Tabelle ist der zentrale Punkt des Systems und verknüpft Gäste, Zimmer und Zahlungsinformationen.
 
 12. Tabelle bezahlung:
-   - Zweck: Verwaltung von Zahlungen für Reservierungen, einschließlich Betrag, Zahlungsstatus und Zahlungsmethode.
+   - Zweck: Verwaltung von Zahlungen für Reservierungen, einschliesslich Betrag, Zahlungsstatus und Zahlungsmethode.
    - Gedanken: Es ist wichtig, alle Zahlungsinformationen zu verfolgen, um sicherzustellen, dass Zahlungen korrekt verbucht werden.
 
 13. Tabelle zimmer_ausstattung:
